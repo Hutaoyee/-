@@ -1,0 +1,7 @@
+# 设置快捷键方式
+在 VScode 快捷键设置页面，搜索 editor.action.inlineSuggest.acceptNextLine 设置。
+
+# 将某功能设置为 TAB 时，原换行符失效
+将
+inlineEditIsVisible && tabShouldAcceptInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionVisible && tabShouldAcceptInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible
+粘贴至欲设置键的 When 表达式。
